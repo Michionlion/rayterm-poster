@@ -221,6 +221,15 @@
 
 }
 
+%% Subtitle command
+\newcommand{\subtitle}[1]{
+\vspace{-1em}
+{\color{black}\it\fontsizeauthor
+#1
+}\\[-1.0em]
+
+}
+
 %% Author command
 \renewcommand{\author}[1]{
 {\color{gray}\fontsizeauthor
