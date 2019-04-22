@@ -12,7 +12,6 @@ The [**Better Poster Template**](https://github.com/rafaelbailo/betterposter-lat
 
 ## Acknowledgements
 
-| Item | Author | Preview |
-|:-------:|:-------:|:------:|
-|[Original Better Poster Design](https://t.co/6WRGQK63g6)|[Mike Morrison](https://twitter.com/mikemorrison)|<img src="https://pbs.twimg.com/media/D2o9U6iX0AEkolp.jpg" height="150px" />|
-|[Smartphone icon](https://www.flaticon.com/free-icon/smartphone_65680)|[Freepik](https://www.flaticon.com/authors/freepik)|<img src="https://raw.githubusercontent.com/rafaelbailo/betterposter-latex-template/master/img/smartphoneBlack.png" height="150px" />|
+* [Better Poster LaTeX template](https://github.com/rafaelbailo/betterposter-latex-template) by [Rafael Bailo](https://twitter.com/rtsbailo)
+* [Original Better Poster Design](https://t.co/6WRGQK63g6) by [Mike Morrison](https://twitter.com/mikemorrison)
+* [Smartphone icon](https://www.flaticon.com/free-icon/smartphone_65680) by [Freepik](https://www.flaticon.com/authors/freepik)
