@@ -12,6 +12,6 @@ The [**Better Poster Template**](https://github.com/rafaelbailo/betterposter-lat
 
 ## Acknowledgements
 
-* [Better Poster LaTeX template](https://github.com/rafaelbailo/betterposter-latex-template) by [Rafael Bailo](https://twitter.com/rtsbailo)
+* [Better Poster LaTeX Template](https://github.com/rafaelbailo/betterposter-latex-template) by [Rafael Bailo](https://twitter.com/rtsbailo)
 * [Original Better Poster Design](https://t.co/6WRGQK63g6) by [Mike Morrison](https://twitter.com/mikemorrison)
 * [Smartphone icon](https://www.flaticon.com/free-icon/smartphone_65680) by [Freepik](https://www.flaticon.com/authors/freepik)
