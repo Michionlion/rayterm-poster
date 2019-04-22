@@ -8,6 +8,24 @@
 
 \documentclass[alleghenyposter]{betterposter}
 
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{graphicx}
+
+% custom packages
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{tikz}
+
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
@@ -67,9 +85,13 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Main finding} goes here,
-\\translated into \textbf{plain English}.
-\\\textbf{Emphasize} the important words.
+\textbf{RayTerm} is a \textbf{tool} to aid the creation of \textbf{graphical applications} in a \textbf{Terminal}
+
+\vspace{1.5in}
+\begin{center}
+  \includegraphics[width=0.9\textwidth]{img/rayterm}
+\end{center}
+\vspace{-6in}
 }{
 %%%% Bottom space
 
@@ -93,9 +115,11 @@
 }{
 %%%%%%%% LEFT COLUMN
 
-\title{The Title}
+\title{RayTerm}
+\institution{A Ray-Tracing Rendering Engine for XTerm-like Terminals}
 \author{Saejin Mahlau-Heinert}
-\institution{Department of Computer Science \\ Allegheny College}
+\author{Janyl Jumadinova}
+\author{Gregory Kapfhammer}
 
 \section{Introduction}
 Here is an itemised list:
