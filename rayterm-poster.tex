@@ -1,0 +1,133 @@
+%%%% Better Poster latex template example v1.0 (2019/04/04)
+%%%% GNU General Public License v3.0
+%%%% Rafael Bailo
+%%%% https://github.com/rafaelbailo/betterposter-latex-template
+%%%%
+%%%% Original design from Mike Morrison
+%%%% https://twitter.com/mikemorrison
+
+\documentclass[a0paper,fleqn]{betterposter}
+
+%%%% Uncomment the following commands to customise the format
+
+%% Setting the width of columns
+% Left column
+%\setlength{\leftbarwidth}{0.25\paperwidth}
+% Right column
+%\setlength{\rightbarwidth}{0.25\paperwidth}
+
+%% Setting the column margins
+% Horizontal margin
+%\setlength{\columnmarginvertical}{0.05\paperheight}
+% Vertical margin
+%\setlength{\columnmarginhorizontal}{0.05\paperheight}
+% Horizontal margin for the main column
+%\setlength{\maincolumnmarginvertical}{0.15\paperheight}
+% Vertical margin for the main column
+%\setlength{\maincolumnmarginhorizontal}{0.15\paperheight}
+
+%% Changing font sizes
+% Text font
+%\renewcommand{\fontsizestandard}{\fontsize{28}{35} \selectfont}
+% Main column font
+%\renewcommand{\fontsizemain}{\fontsize{28}{35} \selectfont}
+% Title font
+%\renewcommand{\fontsizetitle}{\fontsize{28}{35} \selectfont}
+% Author font
+%\renewcommand{\fontsizeauthor}{\fontsize{28}{35} \selectfont}
+% Section font
+%\renewcommand{\fontsizesection}{\fontsize{28}{35} \selectfont}
+
+%% Changing font sizes for a specific text segment
+% Place the text inside brackets:
+% {\fontsize{28}{35} \selectfont Your text goes here}
+
+%% Changing colours
+
+\definecolor{boldgold}{RGB}{254,218,72} % Bold Gold
+\definecolor{teal}{RGB}{0,117,122} % Teal
+\definecolor{glassgreen}{RGB}{0,169,183} % Glass Green
+\definecolor{brightblue}{RGB}{0,123,195} % Bright Blue
+\definecolor{acblue}{RGB}{0,33,68} % AC Blue
+
+
+% Background of side columns
+\renewcommand{\columnbackgroundcolor}{white}
+% Font of side columns
+\renewcommand{\columnfontcolor}{black}
+% Background of main column
+\renewcommand{\maincolumnbackgroundcolor}{acblue}
+% Font of main column
+\renewcommand{\maincolumnfontcolor}{white}
+
+\begin{document}
+\betterposter{
+%%%%%%%% MAIN COLUMN
+
+\maincolumn{
+%%%% Main space
+
+\textbf{Main finding} goes here,
+\\translated into \textbf{plain English}.
+\\\textbf{Emphasize} the important words.
+}{
+%%%% Bottom space
+
+%% QR code
+\qrcode{img/qrcode}{img/smartphoneWhite}{
+\textbf{Scan the QR-code} to
+\\download the full paper
+}
+% Smartphone icon
+% Author: Freepik
+% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
+
+%% Compact QR code (comment the previous command and uncomment this one to switch)
+% \compactqrcode{img/qrcode}{
+% \textbf{Scan the QR-code} to
+% \\download the full paper
+% }
+
+}
+
+}{
+%%%%%%%% LEFT COLUMN
+
+\title{The Title}
+\author{Saejin Mahlau-Heinert}
+\institution{Department of Computer Science \\ Allegheny College}
+
+\section{Introduction}
+Here is an itemised list:
+\begin{itemize}
+\item The first item.
+\item The second item.
+\item The third item.
+\end{itemize}
+
+\section{A Diagram}
+Here is more content.
+
+\section{Content}
+The contents.
+
+\section{Conclusion}
+We conclude here!
+
+%% This fills the space between the content and the logo
+\vfill
+
+\includegraphics[width=\textwidth]{img/allegheny-logo}\\
+
+}{
+%%%%%%%% RIGHT COLUMN
+
+Here you can add \textbf{supplementary material}.
+
+%% This fills the space between the content and the logo
+\vfill
+
+\includegraphics[width=\textwidth]{img/cmpsc-logo}\\
+
+}
+\end{document}
