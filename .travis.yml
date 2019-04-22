@@ -7,6 +7,7 @@ before_install:
 script:
 - mkdir _build
 - latexmk -pdf -outdir=_build rayterm-poster.tex
+- mdl README.md
 deploy:
   provider: releases
   api_key:
