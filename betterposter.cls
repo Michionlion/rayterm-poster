@@ -2,7 +2,7 @@
 %%%% GNU General Public License v3.0
 %%%% Rafael Bailo
 %%%% https://github.com/rafaelbailo/betterposter-latex-template
-%%%% 
+%%%%
 %%%% Original design from Mike Morrison
 %%%% https://twitter.com/mikemorrison
 
@@ -16,7 +16,7 @@
 %%%% REQUIRED PACKAGES
 
 %% Paper size
-\RequirePackage{geometry} 
+\RequirePackage{geometry}
 \geometry{a0paper}
 
 %% Paper orientation
@@ -77,6 +77,15 @@
 \newcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
 \newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
 \newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+
+\DeclareOption{alleghenyposter}{
+\geometry{papersize={36in,48in}}
+\renewcommand{\fontsizestandard}{\fontsize{32.00}{50.50} \selectfont}
+\renewcommand{\fontsizemain}{\fontsize{116.00}{220.00} \selectfont}
+\renewcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
+\renewcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+}
 
 \DeclareOption{a2paper}{
 \geometry{a2paper}
@@ -149,7 +158,7 @@
 \begin{minipage}[t][
 \dimexpr 1.0\textheight-2.0#1\relax
 ][t]{
-\dimexpr 1.0\textwidth-2.0#2\relax		
+\dimexpr 1.0\textwidth-2.0#2\relax
 }
 {\fontsizestandard #3}
 \end{minipage}
@@ -166,7 +175,7 @@
 
 \vspace{1em}
 }
-\vfill	
+\vfill
 \begin{minipage}[t][0.25\textheight][b]{\textwidth}
 #2
 \end{minipage}
