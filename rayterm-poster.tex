@@ -60,7 +60,7 @@
 % Place the text inside brackets:
 % {\fontsize{28}{35} \selectfont Your text goes here}
 
-%% Changing colours
+%% Changing colors
 
 \definecolor{boldgold}{RGB}{254,218,72} % Bold Gold
 \definecolor{teal}{RGB}{0,117,122} % Teal
@@ -116,27 +116,23 @@
 %%%%%%%% LEFT COLUMN
 
 \title{RayTerm}
-\institution{A Ray-Tracing Rendering Engine for XTerm-like Terminals}
+\subtitle{A Ray-Tracing Rendering Engine for XTerm-like Terminals}
 \author{Saejin Mahlau-Heinert}
 \author{Janyl Jumadinova}
 \author{Gregory Kapfhammer}
 
-\section{Introduction}
-Here is an itemised list:
-\begin{itemize}
-\item The first item.
-\item The second item.
-\item The third item.
-\end{itemize}
+\section{What is RayTerm}
+RayTerm is a C++ path-tracing library that is performant, open-source, and programmable.
+Its asthetic is both retro and futuristic: old pixilated graphics are combined with photorealistic lighting.
 
-\section{A Diagram}
-Here is more content.
+\section{Purpose}
+RayTerm is designed for other programmers --- the library simplifies the development of terminal-based programs.
+These terminal programs are often preferred by artists and developers, allowing easy access to many content types.
 
-\section{Content}
-The contents.
 
-\section{Conclusion}
-We conclude here!
+\section{Challenge}
+Real-time rendering is difficult because each frame must be rendered in less than thirty milliseconds; otherwise movement seems choppy and under-sampled.
+Ray-tracing is a computationally intensive process, however, and so lots of optimization and parrallelization is needed.
 
 %% This fills the space between the content and the logo
 \vfill
@@ -146,8 +142,29 @@ We conclude here!
 }{
 %%%%%%%% RIGHT COLUMN
 
-Here you can add \textbf{supplementary material}.
+\section{Ray-Tracing}
+Path-tracing (a kind of ray-tracing) is a method to simulate the path that photons take through the world.
 
+\begin{center}
+\includegraphics[width=0.75\textwidth]{img/world}
+\end{center}
+
+\section{The Rendering Equation}
+\vspace{-1.5em}
+\begin{center}
+$I(x, x') = g(x, x') \Big[\epsilon(x, x') + \int_{S} \rho(x, x',x'')I(x', x'')dx''\Big]$
+\end{center}
+
+\section{Materials}
+Light bounces from surfaces give the world its color and feel.
+In RayTerm materials model this bouncing.
+
+\begin{center}
+\includegraphics[width=0.75\textwidth]{img/surface}
+\end{center}
+
+\section{RTExplore}
+The main image to the left was produced by \texttt{rtexplore}, an example application of about 130 lines of code built with RayTerm.
 %% This fills the space between the content and the logo
 \vfill
 
