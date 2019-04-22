@@ -1,7 +1,7 @@
 # RayTerm Poster
 
 This repository contains the LaTeX source code for RayTerm's poster, which was
-presented at the [2019 Richard J. Cook &mdash; Teresa M. Lahti Scholars Symposium](https://sites.allegheny.edu/research/scholars-symposium-2019/)
+presented at the [2019 Richard J. Cook &ndash; Teresa M. Lahti Scholars Symposium](https://sites.allegheny.edu/research/scholars-symposium-2019/)
 at Allegheny College.
 
 The **Better Poster** is [Mike Morrison](https://twitter.com/mikemorrison)'s
