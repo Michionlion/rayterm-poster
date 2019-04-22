@@ -4,13 +4,11 @@ sudo: required
 before_install:
 - sudo apt -qq update && sudo apt install -y latexmk texlive-fonts-extra texlive-fonts-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-pictures texlive-science pgf
 - gem install mdl
-- pip install proselint
 
 script:
 - mkdir _build
 - latexmk -pdf -outdir=_build rayterm-poster.tex
 - mdl README.md
-- proselint README.md
 
 deploy:
   provider: releases
