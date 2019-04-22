@@ -4,7 +4,7 @@ This repository contains the LaTeX source code for RayTerm's poster, which was
 presented at the [2019 Richard J. Cook -- Teresa M. Lahti Scholars Symposium](https://sites.allegheny.edu/research/scholars-symposium-2019/)
 at Allegheny College.
 
-The [**Better Poster Template**](https://github.com/rafaelbailo/betterposter-latex-template) is [Mike Morrison](https://twitter.com/mikemorrison)'s response to the traditional academic poster. In his own words:
+The **Better Poster** is [Mike Morrison](https://twitter.com/mikemorrison)'s response to the traditional academic poster. In his own words:
 > Every field in science uses the same, old, wall-of-text poster design. If we can improve the knowledge transfer efficiency of that design even by a little bit, it could have massive ripple effects on all of science.
 >
 > Also, poster sessions tend to suck, so here's my pitch to make them more efficient AND more fun with a new approach to designing scientific posters/academic posters that is both more usable, and easier to create!
