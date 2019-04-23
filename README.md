@@ -24,3 +24,5 @@ posters/academic posters that is both more usable, and easier to create!
 
 * [Smartphone icon](https://www.flaticon.com/free-icon/smartphone_65680)
   by [Freepik](https://www.flaticon.com/authors/freepik)
+* [Surface BDRF Diagram](https://www.britannica.com/science/optics) by [Encyclopaedia Britannica](https://www.britannica.com)
+* [Ray Bounces Diagram](http://www.cs.kent.edu/~farrell/cg02/lectures/rendering/render.html) possibly by [Paul A. Farrell](http://www.cs.kent.edu/~farrell/)
