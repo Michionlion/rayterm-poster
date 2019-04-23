@@ -176,10 +176,10 @@
 \vspace{1em}
 }
 \vfill
-\begin{minipage}[t][4in][b]{0.5\textwidth}
+\begin{minipage}[t][4in][b]{0.4\textwidth}
 #2
 \end{minipage}
-\begin{minipage}[t][4in][b]{0.5\textwidth}
+\begin{minipage}[t][4in][b]{0.6\textwidth}
 #3
 \end{minipage}
 }
