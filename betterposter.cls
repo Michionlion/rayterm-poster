@@ -80,11 +80,11 @@
 
 \DeclareOption{alleghenyposter}{
 \geometry{papersize={36in,48in}}
-\renewcommand{\fontsizestandard}{\fontsize{32.00}{50.50} \selectfont}
-\renewcommand{\fontsizemain}{\fontsize{116.00}{220.00} \selectfont}
-\renewcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
-\renewcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
-\renewcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+\renewcommand{\fontsizestandard}{\fontsize{32.00}{49.00} \selectfont}
+\renewcommand{\fontsizemain}{\fontsize{100.00}{200.00} \selectfont}
+\renewcommand{\fontsizetitle}{\fontsize{90.00}{140.00} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{50.00}{72.00} \selectfont}
+\renewcommand{\fontsizesection}{\fontsize{50.00}{72.00} \selectfont}
 }
 
 \DeclareOption{a2paper}{
@@ -167,7 +167,7 @@
 }
 
 %% Main column command
-\newcommand{\maincolumn}[2]{
+\newcommand{\maincolumn}[3]{
 \vfill{
 \fontsizemain
 
@@ -176,28 +176,31 @@
 \vspace{1em}
 }
 \vfill
-\begin{minipage}[t][0.25\textheight][b]{\textwidth}
+\begin{minipage}[t][4in][b]{0.5\textwidth}
 #2
+\end{minipage}
+\begin{minipage}[t][4in][b]{0.5\textwidth}
+#3
 \end{minipage}
 }
 
 %% QR code
 \newcommand{\qrcode}[3]{
-\begin{minipage}[c]{0.30\textwidth}
+\begin{minipage}[c][4in][b]{4in}
 \includegraphics[width=\textwidth]{#1}
 \end{minipage}%
-\begin{minipage}[c]{0.12\textwidth}
+\begin{minipage}[c]{1.5in}
 \hfill
-\includegraphics[height=0.85\textwidth]{#2}
+\includegraphics[height=0.9\textwidth]{#2}
 \end{minipage}%
-\begin{minipage}[c]{0.50\textwidth}
-#3
+\begin{minipage}[c]{3in}
+{\fontsize{20}{24} \selectfont #3}
 \end{minipage}%
 }
 
 %% Compact QR code
 \newcommand{\compactqrcode}[2]{
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.15\textwidth}
 \includegraphics[width=\textwidth]{#1}
 
 #2
