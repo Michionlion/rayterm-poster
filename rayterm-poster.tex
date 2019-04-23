@@ -19,8 +19,6 @@
 \usepackage{hyperref}
 \usepackage{subcaption}
 \usepackage{mathtools}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage{mathptmx}
 \usepackage{listings}
 \usepackage{mdframed}
@@ -84,32 +82,38 @@
 
 \maincolumn{
 %%%% Main space
-
+\vspace{-3in}
 \textbf{RayTerm} is a \textbf{tool} to aid the creation of \textbf{graphical applications} in a \textbf{Terminal}
 
-\vspace{1.5in}
+\vspace{3in}
 \begin{center}
-  \includegraphics[width=0.9\textwidth]{img/rayterm}
+  \includegraphics[width=0.98\textwidth]{img/rayterm}
 \end{center}
-\vspace{-6in}
+\vspace{-3in}
 }{
-%%%% Bottom space
+%%%% Bottom-left space
 
-%% QR code
 \qrcode{img/qrcode}{img/smartphoneWhite}{
 \textbf{Scan the QR-code} to
 \\download the full paper
 }
-% Smartphone icon
-% Author: Freepik
-% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
 
-%% Compact QR code (comment the previous command and uncomment this one to switch)
-% \compactqrcode{img/qrcode}{
-% \textbf{Scan the QR-code} to
-% \\download the full paper
-% }
+}{
+%%%% Bottom-right space
 
+
+\begin{minipage}[c][4in][b]{0.5\textwidth}
+\begin{center}
+{ \fontsize{16}{22} \selectfont CPU (\textasciitilde{}500 seconds, 6 objects) }
+\includegraphics[width=0.9\textwidth]{img/hq-cpu}
+\end{center}
+\end{minipage}%
+\begin{minipage}[c][4in][b]{0.5\textwidth}
+\begin{center}
+{ \fontsize{16}{22} \selectfont GPU (\textasciitilde{}20 seconds, 15k faces) }
+\includegraphics[width=0.9\textwidth]{img/hq-gpu}
+\end{center}
+\end{minipage}%
 }
 
 }{
@@ -118,12 +122,15 @@
 \title{RayTerm}
 \subtitle{A Ray-Tracing Rendering Engine for XTerm-like Terminals}
 \author{Saejin Mahlau-Heinert}
+\institution{CMPSC \& Studio Art, Allegheny College}
 \author{Janyl Jumadinova}
+\institution{CMPSC Professor, Allegheny College}
 \author{Gregory Kapfhammer}
+\institution{CMPSC Chairman, Allegheny College}
 
 \section{What is RayTerm}
-RayTerm is a C++ path-tracing library that is performant, open-source, and programmable.
-Its asthetic is both retro and futuristic: old pixilated graphics are combined with photorealistic lighting.
+RayTerm is a C++ ray-tracing library that is performant, open-source, and programmable.
+Its aesthetic is both retro and futuristic: old pixilated graphics are combined with photorealistic lighting.
 
 \section{Purpose}
 RayTerm is designed for other programmers --- the library simplifies the development of terminal-based programs.
@@ -132,7 +139,7 @@ These terminal programs are often preferred by artists and developers, allowing 
 
 \section{Challenge}
 Real-time rendering is difficult because each frame must be rendered in less than thirty milliseconds; otherwise movement seems choppy and under-sampled.
-Ray-tracing is a computationally intensive process, however, and so lots of optimization and parrallelization is needed.
+Ray-tracing is a computationally intensive process, however, and so optimization and parallelization is needed.
 
 %% This fills the space between the content and the logo
 \vfill
@@ -143,7 +150,7 @@ Ray-tracing is a computationally intensive process, however, and so lots of opti
 %%%%%%%% RIGHT COLUMN
 
 \section{Ray-Tracing}
-Path-tracing (a kind of ray-tracing) is a method to simulate the path that photons take through the world.
+Ray-tracing is a method to simulate the path that photons take through the world.
 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{img/world}
@@ -156,8 +163,8 @@ $I(x, x') = g(x, x') \Big[\epsilon(x, x') + \int_{S} \rho(x, x',x'')I(x', x'')dx
 \end{center}
 
 \section{Materials}
-Light bounces from surfaces give the world its color and feel.
-In RayTerm materials model this bouncing.
+Light bouncing between surfaces gives the world its color and feel.
+In RayTerm `materials' model this bouncing.
 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{img/surface}
