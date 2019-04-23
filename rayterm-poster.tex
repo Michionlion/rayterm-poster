@@ -87,15 +87,17 @@
 
 \vspace{3in}
 \begin{center}
-  \includegraphics[width=0.98\textwidth]{img/rayterm}
+  {
+  \setlength{\fboxrule}{0.05in}
+  \fbox{\includegraphics[width=0.98\textwidth]{img/rayterm}}
+  }
 \end{center}
 \vspace{-3in}
 }{
 %%%% Bottom-left space
 
 \qrcode{img/qrcode}{img/smartphoneWhite}{
-\textbf{Scan the QR code} to
-\\download the full paper
+\textbf{Scan the QR code} to download the full paper
 }
 
 }{
@@ -110,7 +112,7 @@
 \end{minipage}%
 \begin{minipage}[c]{0.5\textwidth}
 \begin{center}
-{ \fontsize{16}{22} \selectfont Rendered 46,914 objects in \textasciitilde{}20 seconds on a GPU }
+{ \fontsize{16}{22} \selectfont Rendered 46,914 objects in 21 seconds on a GPU }
 \includegraphics[width=0.9\textwidth]{img/hq-gpu}
 \end{center}
 \end{minipage}%
